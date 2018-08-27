@@ -9,11 +9,14 @@
                     <el-form-item label="username">
                         <el-input v-model="form.username"></el-input>
                     </el-form-item>
+                    <el-form-item label="email">
+                        <el-input v-model="form.email"></el-input>
+                    </el-form-item>
                     <el-form-item label="password">
                         <el-input type="password" v-model="form.password"></el-input>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" size="mini">login</el-button>
+                        <el-button type="primary" size="mini">signup</el-button>
                     </el-form-item>
                 </el-form>
             </div>
@@ -29,6 +32,7 @@ export default {
       form: {
         username: '',
         password: '',
+        email: '',
       },
     };
   },
@@ -36,35 +40,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .el-row, .el-col{
-        height: 100%;
-    }
-
-    .bg-purple {
-        background: #faf7f6;
-    }
-
-    .grid-content {
-        border-radius: 4px;
-        height: 100%;
-    }
-
-    .cp-img {
-        background: #faf7f6 url('../../assets/tac.gif') no-repeat center center;
-    }
-
-    .el-form-item__label {
-        color: #fff !important;
-    }
-
-    /* http://www.color-hex.com/color/f6f0ee */
-    .cp-login-form {
-        .grid-content {
-            border-radius: 0 !important;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            background: #f6f0ee;
-        }
-    }
 </style>
