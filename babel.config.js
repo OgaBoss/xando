@@ -1,15 +1,19 @@
 module.exports = {
-  presets: [
-    '@vue/app',
-    // ['env', { modules: false }],
-  ],
-  // plugins: [
-  //   [
-  //     'component',
-  //     {
-  //       libraryName: 'element-ui',
-  //       styleLibraryName: 'theme-chalk',
-  //     },
-  //   ],
-  // ],
+	presets: [
+		'@vue/app',
+		[
+			'env',
+			{
+				targets: {
+					browsers: ['last 2 Chrome versions'],
+				},
+			},
+		],
+	],
+	plugins: [
+		['transform-runtime', {
+			polyfill: false,
+			regenerator: true,
+		}],
+	],
 };

@@ -4,15 +4,14 @@
 const mongoose = require('mongoose');
 
 const UserSchema = new mongoose.Schema({
-    username: {
-        type: String,
-        unique: true,
-    },
-    password: {
-        type: String,
-        minlength: 5,
-    },
+	username: {
+		type: String,
+		unique: true,
+	},
+	password: {
+		type: String,
+		minlength: 5,
+	},
 });
 
-mongoose.model('User', UserSchema);
-module.exports = mongoose.model('User');
+module.exports = mongoose.models.User || mongoose.model('User', UserSchema);
