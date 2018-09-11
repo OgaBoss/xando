@@ -15,7 +15,11 @@ const userService = {
 		});
 	},
 
-	getAUser() {},
+	getAUser(req, res) {
+		User.find({ user_name: req.user_name }, (err, users) => {
+			res.send(users[0]);
+		});
+	},
 };
 
 export default userService;

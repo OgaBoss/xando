@@ -10,10 +10,10 @@ module.exports = {
 			},
 		],
 	],
-	plugins: [
-		['transform-runtime', {
-			polyfill: false,
-			regenerator: true,
-		}],
-	],
+	// plugins: [
+	// 	['transform-runtime', {
+	// 		polyfill: false,
+	// 		regenerator: true,
+	// 	}],
+	// ],
 };

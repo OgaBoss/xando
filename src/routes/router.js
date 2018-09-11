@@ -7,23 +7,23 @@ import AuthBase from '../components/Auth/auth_base.vue';
 Vue.use(Router);
 
 export default new Router({
-  routes: [
-    {
-      path: '/auth',
-      name: 'auth',
-      component: AuthBase,
-      children: [
-        {
-          path: 'login',
-          name: 'login',
-          component: Login,
-        },
-        {
-          path: 'register',
-          name: 'register',
-          component: Register,
-        },
-      ],
-    },
-  ],
+	routes: [
+		{
+			path: '/auth',
+			name: 'auth',
+			component: AuthBase,
+			children: [
+				{
+					path: 'login',
+					name: 'login',
+					component: Login,
+				},
+				{
+					path: 'register',
+					name: 'register',
+					component: Register,
+				},
+			],
+		},
+	],
 });

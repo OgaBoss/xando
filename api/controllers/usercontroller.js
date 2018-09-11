@@ -9,4 +9,8 @@ router.get('/', (req, res) => {
 	UserService.getAllUsers(req, res);
 });
 
+router.get('/:user_name', (req, res) => {
+	UserService.getAUser(req, res);
+});
+
 module.exports = router;
