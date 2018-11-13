@@ -1,8 +1,17 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+import routes from './router'
 import store from './store'
 import firebase from 'firebase'
+import Router from 'vue-router'
+
+Vue.use(Router)
+
+const router = new Router({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes
+})
 
 Vue.config.productionTip = false
 

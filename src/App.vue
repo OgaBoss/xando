@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <div class="uk-alert-primary uk-align-center" uk-alert>
+      <a class="uk-alert-close" uk-close></a>
+      <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+    </div>
     <router-view/>
   </div>
 </template>

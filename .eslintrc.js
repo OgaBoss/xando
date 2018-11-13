@@ -13,5 +13,8 @@ module.exports = {
   },
   parserOptions: {
     parser: 'babel-eslint'
-  }
+  },
+	env: {
+		"jest": true
+	},
 }
